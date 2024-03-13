@@ -1,0 +1,316 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: sppline sans;
+    src: url(fonts/SplineSans-Regular.ttf);
+}
+/* all buttons hover */
+.btns:hover{
+    background-color: white;
+    border: 2px solid #004C3F;
+    color: #004C3F !important;
+    font-weight: 500;
+}
+.btns{
+    border: 2px solid rgb(0, 0, 0,0);   
+}
+a{
+    text-decoration: none;
+}
+.bg-green{
+   background-color:  #028835;
+}
+.bg-dark-green{
+    background-color: #004C3F;
+}
+.text-red{
+    color: #C02A2A;
+}
+.text-grey{
+    color:#7D7D7D;
+}
+.text-green{
+    color:#004C3F;
+}
+.text-light-green{
+    color:#028835;
+}
+.font-size-12{
+    font-size: 12px;
+}
+.font-size-20{
+    font-size: 20px;
+    font-weight: 'sppline sans';
+}
+.font-size-24{
+    font-size: 24px;
+}
+.font-size-28{
+    font-size: 28px;
+}
+.fw-600{
+    font-weight: 600;
+}
+h1{
+    font-size: 70px;
+    line-height: 75px;
+    font-family: 'Spline Sans', sans-serif;  
+}
+
+h2{
+    font-size: 40px;
+    font-family: 'Spline Sans', sans-serif; 
+}
+h3{
+    font-size: 40px;
+    font-family: 'Spline Sans', sans-serif; 
+}
+
+h6{
+    font-size: 18px;
+    line-height: 27px;
+    /* font-family: 'Spinnaker', sans-serif; */
+}
+
+p{
+    font-size: 14px;
+    color: #7D7D7D;
+     /* font-family: 'Spinnaker', sans-serif; */
+}
+
+.section{
+    padding: 80px 0px;
+}
+
+/* navbar css start */
+ .nav-item .active{
+    color: #028835 !important; 
+ }
+.nav-link:hover{
+    color: white !important;
+    background-color: #028835;
+}
+/* navbar css End */
+ 
+/* Homepage-banner css start */
+.homepage-banner{
+    background-image: url(images/banner/banner-bg.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+/* Homepage-banner css end */
+
+
+/* newMovers section start */
+.newmovers li::before, .services li::before{
+    content: url(images/Newmover-sec-img/check\ .png);
+    width: 40px;
+    height: 40px;
+    background: #D9F5E4;
+    padding: 7px 14px;
+    border-radius: 5px;
+    margin-right:15px;
+    margin-left: 20px;
+}
+.user-satisfaction .box{
+     bottom:7%;
+     left: 50%;
+     margin-left: -40px;
+}
+.satisfy{
+    width: 40px;
+    height: 40px;
+}
+.circle{
+    top: 0;
+    left: 0;
+    margin-top: 30px;
+    margin-left: 70px;
+    z-index: -1;
+    animation: rotation 30s linear infinite;
+  }
+  @keyframes rotation{
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+ 
+/* newMovers section end */
+
+
+/* services section start */
+.services{
+    background-color: rgb(251,247,237);
+}
+.service-card:hover{
+    background: #004C3F !important;
+}
+.service-card:hover .service-title, .service-card:hover p{
+    color: white;
+}
+.service-img{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(251,247,237);
+    font-size: 35px;
+}
+.service-card:hover .service-img{
+    border-color: white !important;
+    background-color: white;
+}
+/* services section end */
+
+
+/* best place section start */
+.bestplace{
+    background-image: url(images/bestplace/bgImg.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    /* background-size:contain; */
+}
+.outer{  
+    background-color: #028835;
+    clip-path: polygon(85% 0, 100% 50%, 85% 100%, 0% 100%, 0 50%, 0 0);
+}
+.inner{
+    clip-path: polygon(85% 0, 100% 50%, 85% 100%, 0% 100%, 0 50%, 0 0);   
+} 
+.bg-white-fix{
+    width:170px;
+    height: 700px;
+    background-color: white;
+    left: 0;
+    top: 0;
+}
+
+ /* best place section end */
+
+ /* frequently asked question section start */
+  .frequently-asked{
+    background-image: url(images/frequentlyAskedQues/frequently-asked-bg.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat; 
+  }
+  .accordion{
+    margin-left: -80px;  
+  }
+  .accordion, .frequently-img{
+    margin-bottom: -110px;
+  }
+  .accordion{
+    --bs-accordion-active-bg:#028835;
+    --bs-accordion-active-color:#fff;
+    --bs-accordion-btn-focus-box-shadow:#004C3F;
+    --bs-accordion-bg:#FBF7ED;
+  }
+ /* frequently asked question section end */
+ 
+
+/* your Question section start  */
+ .yourquestion{
+        padding-top: 180px;
+    }
+  form{
+        margin-bottom: -80px;
+    }
+    .bg-form{
+        background-image: url("images/yourQuestionSec/yourQuestionSecImg.png");
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+/* your Question section end  */
+  
+
+ /* footer section start */
+ .footer-head{
+    background: url(images/footer/footer-bg.png);
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: -90px;
+    z-index: 1;
+    position: relative;
+  }
+  .footer-sec2{
+    background: #FBF7ED;
+    padding-top: 120px;
+    position: relative;
+  }
+  .footer-icon{
+    width: 50px;
+    height: 50px;
+  }
+  .footer-icon:hover, .f-icon:hover{
+    border:2px solid #028835;
+  }
+  .f-icon{
+    width: 50px;
+    height: 50px;
+  }
+ /* footer section start */ 
+  
+   
+
+
+
+ @media only screen and (max-width:576px){
+    .section{
+        padding:50px 30px !important;
+     }  
+ } 
+@media only screen and (max-width:772px){
+    .section{
+        padding:70px 50px;
+     }
+    h1{
+        font-size: 40px;
+        line-height: 45px;
+    }
+}
+@media only screen and (max-width:992px){
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    .newmovers li, .services li{
+        font-size: 13px;
+    } 
+    /*frequently asked question section */
+    .accordion{
+        margin-left: 0;
+      }
+    .accordion, .frequently-img{
+        margin-bottom: 0;
+      }  
+    /* your Question section start  */
+     .yourquestion{
+        padding-top: 60px;
+    }
+    .yourquestion form{
+        margin-bottom: 0;
+    }
+   /* your Question section end  */ 
+      
+}
+
+
+ 
+
+
+
+
+
+ 
+  
